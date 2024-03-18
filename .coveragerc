@@ -1,0 +1,6 @@
+[paths]
+source =
+    api_adapter
+
+[html]
+directory = coverage_html_report

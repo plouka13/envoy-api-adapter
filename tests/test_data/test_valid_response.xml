@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cec="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Awolako Enterprises Pty Ltd</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+            <cac:PostalAddress>
+                <cac:Country>
+                    <cbc:IdentificationCode>AU</cbc:IdentificationCode>
+                </cac:Country>
+                <cbc:AdditionalStreetName>999 The Crescent</cbc:AdditionalStreetName>
+                <cbc:CityName>Homebush West</cbc:CityName>
+                <cbc:PostalZone>2140</cbc:PostalZone>
+                <cbc:StreetName>Suite 132 Level 45</cbc:StreetName>
+            </cac:PostalAddress>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0151">80647710156</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Ebusiness Software Services Pty Ltd</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+            <cac:PostalAddress>
+                <cac:Country>
+                    <cbc:IdentificationCode>AU</cbc:IdentificationCode>
+                </cac:Country>
+                <cbc:CityName>Dulwich Hill</cbc:CityName>
+                <cbc:PostalZone>2203</cbc:PostalZone>
+                <cbc:StreetName>100 Business Street</cbc:StreetName>
+            </cac:PostalAddress>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AdditionalDocumentReference>
+        <cbc:ID>ebwasp1002</cbc:ID>
+    </cac:AdditionalDocumentReference>
+    <cac:InvoiceLine>
+        <cac:Item>
+            <cac:ClassifiedTaxCategory>
+                <cac:TaxScheme>
+                    <cbc:ID>GST</cbc:ID>
+                </cac:TaxScheme>
+                <cbc:ID>5</cbc:ID>
+                <cbc:Percent>10</cbc:Percent>
+            </cac:ClassifiedTaxCategory>
+            <cbc:Name>Pencils</cbc:Name>
+        </cac:Item>
+        <cac:Price>
+            <cbc:BaseQuantity>1</cbc:BaseQuantity>
+            <cbc:PriceAmount currencyID="AUD">0.2</cbc:PriceAmount>
+        </cac:Price>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity>500</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="AUD">100</cbc:LineExtensionAmount>
+    </cac:InvoiceLine>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="AUD">100</cbc:LineExtensionAmount>
+        <cbc:PayableAmount currencyID="AUD">110</cbc:PayableAmount>
+        <cbc:PayableRoundingAmount currencyID="AUD">0</cbc:PayableRoundingAmount>
+        <cbc:TaxExclusiveAmount currencyID="AUD">100</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="AUD">110</cbc:TaxInclusiveAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:PaymentMeans>
+        <cbc:PaymentID>EBWASP1002</cbc:PaymentID>
+        <cbc:PaymentMeansCode>1</cbc:PaymentMeansCode>
+    </cac:PaymentMeans>
+    <cac:PaymentTerms>
+        <cbc:Note>As agreed</cbc:Note>
+    </cac:PaymentTerms>
+    <cac:TaxTotal>
+        <cac:TaxSubtotal>
+            <cac:TaxCategory>
+                <cac:TaxScheme>
+                    <cbc:ID>GST</cbc:ID>
+                </cac:TaxScheme>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>10</cbc:Percent>
+            </cac:TaxCategory>
+            <cbc:TaxAmount currencyID="AUD">10</cbc:TaxAmount>
+            <cbc:TaxableAmount currencyID="AUD">100</cbc:TaxableAmount>
+        </cac:TaxSubtotal>
+        <cbc:TaxAmount currencyID="AUD">10</cbc:TaxAmount>
+    </cac:TaxTotal>
+    <cbc:BuyerReference>EBWASP1002</cbc:BuyerReference>
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:aunz:3.0</cbc:CustomizationID>
+    <cbc:DocumentCurrencyCode>AUD</cbc:DocumentCurrencyCode>
+    <cbc:ID>EBWASP1002</cbc:ID>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:IssueDate>2022-02-07</cbc:IssueDate>
+    <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+    <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+</Invoice>

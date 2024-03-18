@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cec="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>My Registration Name</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+            <cac:PostalAddress>
+                <cac:Country>
+                    <cbc:IdentificationCode>NZ</cbc:IdentificationCode>
+                </cac:Country>
+                <cbc:AdditionalStreetName>123 Rainbow St</cbc:AdditionalStreetName>
+                <cbc:CityName>Kensington</cbc:CityName>
+                <cbc:PostalZone>2019</cbc:PostalZone>
+                <cbc:StreetName>Side A</cbc:StreetName>
+            </cac:PostalAddress>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0151">12345678912</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>My Software Service Pty Ltd</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+            <cac:PostalAddress>
+                <cac:Country>
+                    <cbc:IdentificationCode>NZ</cbc:IdentificationCode>
+                </cac:Country>
+                <cbc:CityName>Sydney</cbc:CityName>
+                <cbc:PostalZone>2000</cbc:PostalZone>
+                <cbc:StreetName>123 Clark St</cbc:StreetName>
+            </cac:PostalAddress>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AdditionalDocumentReference>
+        <cbc:ID>ebwasp1234</cbc:ID>
+    </cac:AdditionalDocumentReference>
+    <cac:InvoiceLine>
+        <cac:Item>
+            <cac:ClassifiedTaxCategory>
+                <cac:TaxScheme>
+                    <cbc:ID>GSX</cbc:ID>
+                </cac:TaxScheme>
+                <cbc:ID>9</cbc:ID>
+                <cbc:Percent>10</cbc:Percent>
+            </cac:ClassifiedTaxCategory>
+            <cbc:Name>Notebooks</cbc:Name>
+        </cac:Item>
+        <cac:Price>
+            <cbc:BaseQuantity>1</cbc:BaseQuantity>
+            <cbc:PriceAmount currencyID="AUD">1.5</cbc:PriceAmount>
+        </cac:Price>
+        <cbc:ID>2</cbc:ID>
+        <cbc:InvoicedQuantity>124</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="AUD">500</cbc:LineExtensionAmount>
+    </cac:InvoiceLine>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="AUD">500</cbc:LineExtensionAmount>
+        <cbc:PayableAmount currencyID="AUD">510</cbc:PayableAmount>
+        <cbc:PayableRoundingAmount currencyID="AUD">0</cbc:PayableRoundingAmount>
+        <cbc:TaxExclusiveAmount currencyID="AUD">500</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="AUD">510</cbc:TaxInclusiveAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:PaymentMeans>
+        <cbc:PaymentID>EBWASP1234</cbc:PaymentID>
+        <cbc:PaymentMeansCode>1</cbc:PaymentMeansCode>
+    </cac:PaymentMeans>
+    <cac:PaymentTerms>
+        <cbc:Note>Paid</cbc:Note>
+    </cac:PaymentTerms>
+    <cac:TaxTotal>
+        <cac:TaxSubtotal>
+            <cac:TaxCategory>
+                <cac:TaxScheme>
+                    <cbc:ID>GSX</cbc:ID>
+                </cac:TaxScheme>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>10</cbc:Percent>
+            </cac:TaxCategory>
+            <cbc:TaxAmount currencyID="AUD">10</cbc:TaxAmount>
+            <cbc:TaxableAmount currencyID="AUD">510</cbc:TaxableAmount>
+        </cac:TaxSubtotal>
+        <cbc:TaxAmount currencyID="AUD">10</cbc:TaxAmount>
+    </cac:TaxTotal>
+    <cbc:BuyerReference>EBWASP1234</cbc:BuyerReference>
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:aunz:3.0</cbc:CustomizationID>
+    <cbc:DocumentCurrencyCode>NZD</cbc:DocumentCurrencyCode>
+    <cbc:ID>EBWASP1234</cbc:ID>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+    <cbc:IssueDate>2022-01-19</cbc:IssueDate>
+    <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+    <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+</Invoice>

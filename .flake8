@@ -1,0 +1,10 @@
+[flake8]
+exclude = .git,__pycache__
+max-line-length = 120
+ignore =
+    # Whitespace before colon. Conflicts with black
+    E203,
+    # line break before binary operator. Conflicts with black
+    W503,
+    # long lines cbs
+    E501
